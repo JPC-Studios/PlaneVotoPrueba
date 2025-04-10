@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página principl</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: url('https://scontent.ftrc2-1.fna.fbcdn.net/v/t39.30808-6/428641122_801045372062607_639873476933964867_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFnB9XfpBLMcz7GxHU_Hy7zfyteyVPNGOR_K17JU80Y5BFhtWqJaWNeRa7n_-gRx9LtnRwpihzVd36dua2UpOI2&_nc_ohc=aWMzFdmFEtkQ7kNvwHXXvuJ&_nc_oc=AdnnWM6FBy0tUfV_Vipod_7mZShly6fiE4_ZIBHnbv-o-2k-eiKI6rzGnKdYj_ubpbh00djPF2xNpA6Lf7IOvkPG&_nc_zt=23&_nc_ht=scontent.ftrc2-1.fna&_nc_gid=dGym5REOtBilg0xwJvD6-g&oh=00_AfHGOTCbiCLVJDL6vuAUJaBQ6O_Zk4rnP94omojC-FMSEw&oe=67FD01D8') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #ffcc00;
+      text-shadow: 2px 2px #000;
+    }
+    .btn-start {
+      background: #ff0000;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: 3px solid #fff;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: 0.3s;
+    }
+    .btn-start:hover {
+      background: #cc0000;
+    }
+    nav {
+      margin-top: 3rem;
+    }
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      margin: 1rem;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border: 2px solid #fff;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card button {
+      margin-top: 1rem;
+      background-color: #00ffff;
+      color: #000;
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background-color: #00cccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>SUPERNAUTA DEL MES</h1>
+    <p>¡Bienvenido a la la votación de los Supernautas! Elige a tu Supernauta favorito y decide quién será el Supernauta Del Mes.</p>
+    <button class="btn-start" onclick="location.href='votaciones.html'">¡Comenzar!</button>
+    <nav>
+      <a href="votaciones.html">Votar</a>
+      <a href="categorias.html">Categorías</a>
+      <a href="resultados.html">Resultados</a>
+      <a href="creditos.html">Créditos</a>
+    </nav>
+  </div>
+</body>
+</html>
