@@ -53,7 +53,7 @@
   <button onclick="checkPassword()">Ingresar</button>
 
   <div id="resultados" class="results hidden">
-    <h2>Resultados del Torneo</h2>
+    <h2>Resultados de la Votación</h2>
     <ul>
       <li>🏆 Checo - 45 votos</li>
       <li>🎖️ Karen - 33 votos</li>
@@ -65,7 +65,7 @@
   <script>
     function checkPassword() {
       const input = document.getElementById("password").value;
-      const correct = "karen123"; // puedes cambiar esta contraseña
+      const correct = "jpc123"; // puedes cambiar esta contraseña
 
       if (input === correct) {
         document.getElementById("resultados").classList.remove("hidden");
